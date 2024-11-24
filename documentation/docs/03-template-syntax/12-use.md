@@ -53,14 +53,7 @@ The `Action` interface receives three optional type arguments — a node type (w
 	import { on } from 'svelte/events';
 
 	/**
-	 * @type {import('svelte/action').Action<
-	 * 	HTMLDivElement,
-	 * 	null,
-	 * 	{
-	 * 		onswiperight: (e: CustomEvent) => void;
-	 * 		onswipeleft: (e: CustomEvent) => void;
-	 * 		// ...
-	 * }>}
+	 * @type {import('svelte/action').Action<HTMLDivElement,null,{onswiperight: (e: CustomEvent) => void;onswipeleft: (e: CustomEvent) => void;}>}
 	 */
 	function gestures(node) {
 		$effect(() => {
